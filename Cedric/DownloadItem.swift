@@ -10,7 +10,7 @@ import Foundation
 
 internal class DownloadItem: Equatable {
     internal let resource: DownloadResource
-    internal weak var fileManager: FileManagerType!
+    internal let fileManager: FileManagerType
     internal var completionBlock: (() -> Void)? // internal indicate that task is finished
     internal let task: URLSessionDownloadTask
     
